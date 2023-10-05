@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 function CalcButton({ label, onClick, buttonClassName = "CalcButton", style = {} }) {
-  // Define a list of labels that should have a different background color (white)
   const whiteBackgroundLabels = ["9", "8", "7", "6", "5", "4", "3", "2", "1","0"];
 
-  // Conditionally apply the "WhiteBackground" class if the label is in the list
   const finalClassName = whiteBackgroundLabels.includes(label.toString())
     ? `CalcButton ${buttonClassName} WhiteBackground`
     : `CalcButton ${buttonClassName}`;

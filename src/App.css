@@ -1,10 +1,95 @@
+/* Gradient background for the entire page */
 .App {
+  box-sizing: border-box;
   text-align: center;
+  min-height: 100vh;
+  color: dimgray;
+  background: linear-gradient(45deg, #7d8943, #5f638c, #7d8943);
+  background-size: 400% 400%;
+  animation: gradient 15s linear infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Calculator container styles */
+.CalcContainer {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a card-like effect */
+}
+
+/* Calculator title styles */
+h1 {
+  font-size: px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for a subtle glow effect */
+}
+
+/* Calculator display styles */
 .CalcDisplay {
+  border: 1px solid #212223;
   height: 40px;
-  background-color: pink;
   font-size: 2em;
-  color: white;
+  text-align: right;
+  padding: 10px;
+  background: #212223;
+  color: #F5F5E9;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+/* Calculator button styles */
+.ButtonContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.CalcButton,
+.CalcButtonName {
+  font-size: 2em; /* Set the font size for number buttons */
+  justify-content: center;
+  color: #ffffff;
+  background-color: #1c1c1c; /* Updated button color */
+  border: 2px solid #000000; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Larger padding for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.WhiteBackground {
+  background-color: white;
+  color: #000; /* Text color for white background buttons */
+  border: 2px solid #000; /* Border color for white background buttons */
+}
+
+.CalcButton:hover {
+  background-color: #3a3a3a; /* Darker color on hover */
+}
+
+/* Increase the font size for the "Name" class */
+.Name {
+  margin-top: 20px; /* Increased top margin */
+}
+
+.Notes {
+  padding: 20px; /* Increased padding */
+  margin: 50px 200px; /* Adjusted margin */
+  font-size: 1.5em;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 500;
 }

@@ -1,4 +1,4 @@
-/* Gradient background for the entire page */
+
 .App {
   box-sizing: border-box;
   text-align: center;
@@ -18,15 +18,15 @@
   }
 }
 
-/* Calculator container styles */
+
 .CalcContainer {
   width: 500px;
   margin: auto;
   text-align: center;
   padding: 50px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for a card-like effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 
 /* Calculator title styles */
@@ -34,10 +34,9 @@ h1 {
   font-size: px;
   color: #ffffff;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for a subtle glow effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-/* Calculator display styles */
 .CalcDisplay {
   border: 1px solid #212223;
   height: 40px;
@@ -50,7 +49,6 @@ h1 {
   margin-bottom: 2px;
 }
 
-/* Calculator button styles */
 .ButtonContainer {
   display: grid;
   gap: 10px;
@@ -59,35 +57,34 @@ h1 {
 
 .CalcButton,
 .CalcButtonName {
-  font-size: 2em; /* Set the font size for number buttons */
+  font-size: 2em; 
   justify-content: center;
   color: #ffffff;
-  background-color: #1c1c1c; /* Updated button color */
-  border: 2px solid #000000; /* Border color */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Larger padding for buttons */
+  background-color: #1c1c1c;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  transition: background-color 0.3s ease;
 }
 
 .WhiteBackground {
   background-color: white;
-  color: #000; /* Text color for white background buttons */
-  border: 2px solid #000; /* Border color for white background buttons */
+  color: #000;
+  border: 2px solid #000;
 }
 
 .CalcButton:hover {
-  background-color: #3a3a3a; /* Darker color on hover */
+  background-color: #3a3a3a;
 }
 
-/* Increase the font size for the "Name" class */
 .Name {
-  margin-top: 20px; /* Increased top margin */
+  margin-top: 20px;
 }
 
 .Notes {
-  padding: 20px; /* Increased padding */
-  margin: 50px 200px; /* Adjusted margin */
+  padding: 20px;
+  margin: 50px 200px;
   font-size: 1.5em;
   text-align: left;
   color: #ffffff;
